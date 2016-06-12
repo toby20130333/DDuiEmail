@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>receiv_background.jpg</file>
+        <file>send_background.jpg</file>
+        <file>background1.jpg</file>
+        <file>background2.jpg</file>
+        <file>ldarrowdown.png</file>
+        <file>lfDownArrowP.png</file>
+        <file>lfUpArrowN.png</file>
+        <file>lfUpArrowP.png</file>
+        <file>lUArrowdown.png</file>
+        <file>header.png</file>
+    </qresource>
+</RCC>

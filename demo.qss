@@ -1,0 +1,199 @@
+﻿QWidget{
+   background-color:#4F9DE0;
+   border:none;
+   font-size:11px;
+}
+
+QPushButton{
+text-align:center;
+color:white;
+min-width:80px;
+background-color:#638ACB;
+height:30px;
+border:none;
+}
+
+#closebtn{
+  width:30px;
+}
+QPushButton:hover{
+background-color:#DC5354;
+color:white;
+}
+
+QTabBar::tab {
+    background-color:#638ACB;
+    border:none;
+    border-radius:0px;
+    border-right:1px solid #62666C;
+    min-width:50px;
+    min-height:25px;
+    color:white;
+    text-align:center;
+    margin:0px;
+}
+QTabWidget::pane {
+    margin:0px;
+    margin-bottom:-1px;
+    border:none;
+    border-bottom:1px solid #62666C;
+}
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: gray;
+}
+
+QTabBar::tab:selected {
+    background:#DC5354;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* make non-selected tabs look smaller */
+}
+QLabel{
+ text-align:center;
+ color:black;
+ width:80px;
+}
+
+#titleLb{
+color:white;
+background:#638ACB;
+}
+
+QScrollBar:vertical
+{
+    max-width:13px;
+    min-width:13px;
+    background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #26262B, stop: 0.5 #313339, stop: 1.0 #3D4047);
+    margin:0px,0px,0px,0px;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+
+QScrollBar::handle:vertical
+{
+    max-width:11px;
+    min-width:11px;
+    background:#75767E;
+    border-radius:4px;
+    min-height:40px;
+        margin-right:1px;
+        margin-left:3px;
+}
+QScrollBar::add-line:vertical
+{
+    height:16px;width:13px;
+    border-image:url(:/lUArrowdown.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical
+{
+    height:16px;width:13px;
+    border-image:url(:/ldarrowdown.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-line:vertical:hover
+{
+    background:rgba(0,0,0,10%);
+    border-image:url(:/lUArrowdown.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical:hover
+{
+    background:rgba(0,0,0,10%);
+    border-image:url(:/ldarrowdown.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+
+QLineEdit {
+color:black;
+border-color: #444444;
+border:1px;
+min-height:30px;
+max-height:30px;
+padding: 0 2px;
+font-size:12px;
+background-color: #cccccc;
+}
+QLineEdit:focus {
+border:1px;
+border-radius: 2px;
+border-color: #333333;
+color:rgb(0, 0, 0);
+background-color: gray;
+}
+QTextEdit,QPlainTextEdit {
+color:white;
+border:1px outset;
+border-right:1px;
+border-color: white;
+background-color:#638ACB;
+font-size:12px;
+selection-background-color: darkgray;
+}
+QTextBrowser {
+color:white;
+border:1px outset;
+border-left:1px;
+border-color: white;
+background-color:#000000;
+font-size:11px;
+font-family:Comic Sans MS;
+selection-background-color: darkgray;
+}
+QComboBox {
+    border: 1px solid #4F9DE0;
+    border-radius: 0px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    height:28px;
+}
+
+QComboBox:editable {
+    background: 4F9DE0;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 0px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 0px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox::down-arrow {
+    image: url(:/lUArrowdown.png);
+}
